@@ -19,7 +19,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <ul className="links">
-                        <li><a href="https://nikki-lou.netlify.app/">About</a></li>
+                        <li><Link onClick={handleClick} to="/">Home</Link></li>
                         <li><Link to="/games">Games</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><a href='https://bmc.link/nikkilou'>Support</a></li>
