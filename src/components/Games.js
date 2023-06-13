@@ -14,9 +14,9 @@ const Games = () => {
                     </div>
                     <div className='col'>
                         <div className='card card1'>
-                            <h5>Snake</h5>
+                            <h5>8-bit Snake</h5>
                             <p>
-                                The player maneuvers a growing line, representing the body moving through space. Apples randomly appear on the gameboard and,
+                                A retro style game in which the player maneuvers a growing line, representing the body moving through space. Apples randomly appear on the gameboard and,
                                 when consumed, the body grows to eventually become the primary obstacle.
                             </p>
                             <a href='https://zesty-centaur-003438.netlify.app/'>
