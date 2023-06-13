@@ -110,8 +110,8 @@ li {
 }
 
 .box {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,6 +442,7 @@ textarea:focus~label{
     display: flex;
     height: 88%;
     align-items: center;
+    font-size: 55px;
 }
 
 .col {
@@ -467,13 +468,13 @@ button:hover {
 button#portfolio{
     width: 120px;
     color: #000;
-    font-size: 10px;
+    font-size: 11px;
     padding: 12px 0;
     background: #ffffff;
     border: 0;
     border-radius: 20px;
     outline: none;
-    margin-top: 5px;
+    margin-top: 15px;
     transition: scale 0.2 ease;
 }
 
