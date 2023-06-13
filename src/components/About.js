@@ -14,11 +14,12 @@ const About = () => {
                     <div className='container'>
                         <div className="icons">
                             <div className="icon-row">
-                                <div className="icon box transition-fade">
-                                    <a href="https://www.linkedin.com/in/nikkilou/">
-                                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            <div className="icon box">
+                                    <a href="https://nikki-lou.netlify.app/">
+                                    <i class="fa-solid fa-address-card fa-2xl"></i>
                                     </a>
                                 </div>
+                                
 
                                 <div className="icon box">
                                     <a href="https://www.instagram.com/nikki._lou_/">
@@ -34,16 +35,16 @@ const About = () => {
                                     </a>
                                 </div>
 
-                                <div className="icon box">
-                                    <a href="https://discordapp.com/users/nikaloo">
-                                        <i class="fa-brands fa-discord fa-2xl"></i>
+                                <div className="icon box transition-fade">
+                                    <a href="https://www.linkedin.com/in/nikkilou/">
+                                        <i class="fa-brands fa-linkedin fa-2xl"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="https://nikki-lou.netlify.app/">
-                            <button id="portfolio">Meet the Creator.</button>
+                        <a href="https://bmc.link/nikkilou">
+                            <button id="portfolio">Support the Creator.</button>
                         </a>
                     </div>
                 </div>
