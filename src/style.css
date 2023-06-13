@@ -252,20 +252,25 @@ html.is-leaving .transition-fade {
 
 .row {
     display: flex;
-    height: 88%;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .col {
     flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    align-items: center;
 }
 
-h1.row {
+h1.title {
     color: #ffffff;
     font-size: 100px;
 }
 
-p.row {
+p.title {
     color: #ffffff;
     font-size: 11px;
     line-height: 15px;

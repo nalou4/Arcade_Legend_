@@ -6,10 +6,11 @@ const Games = () => {
         <>
             <Header />
             <section>
+
                 <div className='row'>
-                    <div className='col'>
-                        <h1 className='row'>Games</h1>
-                        <p className='row'>Choose your game.</p>
+                    <div className='title-col'>
+                        <h1 className='title'>Games</h1>
+                        <p className='title'>Choose your game.</p>
 
                     </div>
                     <div className='col'>
@@ -45,7 +46,7 @@ const Games = () => {
                         <div className='card card4'>
                             <h5>Alien Attack</h5>
                             <p>
-                            Defend Earth from an alien invasion by whacking aliens with a hammer as they pop up out of holes in the ground.
+                                Defend Earth from an alien invasion by whacking aliens with a hammer as they pop up out of holes in the ground.
                             </p>
                             <a href=''>
                                 <button disabled={true} type='button'>Under Construction</button>
@@ -53,6 +54,7 @@ const Games = () => {
                         </div>
                     </div>
                 </div>
+
             </section>
         </>
     )
