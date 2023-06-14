@@ -5,13 +5,14 @@ const About = () => {
         <>
             <Header />
             <section>
-                <div className='row'>
+                <div className='about-row'>
+
                     <div className='col'>
                         <h1 className='intro'>Hi! I'm Nikki.</h1>
                         <p className='intro'>Software Engineer /<br></br>Web Developer</p>
-
                     </div>
-                    <div className='container'>
+
+                    <div className='about-container'>
                         <div className="icons">
                             <div className="icon-row">
                             <div className="icon box">
@@ -47,6 +48,7 @@ const About = () => {
                             <button id="portfolio">Support the Creator.</button>
                         </a>
                     </div>
+
                 </div>
             </section>
 

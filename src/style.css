@@ -13,7 +13,10 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/modern-arcade.jpeg);
     background-position: center;
     background-size: cover;
-    /* background-attachment: fixed; */
+}
+
+html{
+    min-width:382px;
 }
 
 section {
@@ -41,6 +44,7 @@ svg {
     flex-direction: column;
     align-items: center;
     padding: 1.2rem;
+    border: solid blue 3px;
 }
 
 .container h1 {
@@ -70,7 +74,7 @@ a:hover {
     color: orange;
 }
 
-#link:hover{
+#link:hover {
     color: orange;
     cursor: pointer;
     transform: scale(1.1);
@@ -242,6 +246,12 @@ html.is-leaving .transition-fade {
     }
 }
 
+@media(max-width: 765px) {
+    .col {
+        margin: 10px 1px 0px 100px;
+    }
+}
+
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -259,10 +269,6 @@ html.is-leaving .transition-fade {
 
 .col {
     flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    width: 100vh;
-    align-items: center;
 }
 
 h1.title {
@@ -346,28 +352,29 @@ h5 {
 }
 
 /* Contact Form */
-.contactForm{
+.contactForm {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-form-container{
+.contact-form-container {
     height: 100vh;
 }
 
-#contact-form{
+#contact-form {
     width: 90%;
     max-width: 600px;
 }
 
-.input-group{
+.input-group {
     margin-bottom: 30px;
     position: relative;
     font-family: poppins;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -378,7 +385,7 @@ input, textarea{
     font-family: poppins;
 }
 
-label{
+label {
     height: 100%;
     position: absolute;
     left: 0;
@@ -389,7 +396,7 @@ label{
     transition: 0.2s;
 }
 
-button.contact-btn{
+button.contact-btn {
     padding: 10px, 0;
     color: #ffffff;
     outline: none;
@@ -404,7 +411,7 @@ button.contact-btn{
 
 input:focus~label,
 textarea:focus~label,
-textarea:valid~label{
+textarea:valid~label {
     top: -35px;
     font-size: 14px;
 }
@@ -430,18 +437,31 @@ textarea:focus~label{
     font-size: 14px;
 } */
 
-.contact-row{
+.contact-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.contact-row .input-group{
+.contact-row .input-group {
     flex-basis: 48%;
 }
 
 
 /*About Page*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    margin-right: 70px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .intro {
     display: flex;
@@ -470,7 +490,7 @@ button:hover {
     background-color: orange;
 }
 
-button#portfolio{
+button#portfolio {
     width: 120px;
     color: #000;
     font-size: 11px;
