@@ -25,7 +25,10 @@ const Header = () => {
                         <li><a href='https://bmc.link/nikkilou'>Support</a></li>
                     </ul>
 
-                    <Link onClick={handleClick} className='action_btn' to="/feedback">Leave Feedback</Link>
+                    <a href="mailto:nalou4@gmail.com" target="_blank" className='action_btn'>
+                        Leave Feedback
+                    </a>
+                    {/* <Link onClick={handleClick} className='action_btn' to="/feedback">Leave Feedback</Link> */}
                     <div className="toggle_btn">
                         <i className="fa-solid fa-bars"></i>
                     </div>
@@ -35,7 +38,12 @@ const Header = () => {
                     <li><Link onClick={handleClick} to="/games">Games</Link></li>
                     <li><Link onClick={handleClick} to="/about">About</Link></li>
                     <li><a href='https://bmc.link/nikkilou'>Support</a></li>
-                    <li><Link onClick={handleClick} className='action_btn' to="/feedback">Leave Feedback</Link></li>
+                    {/* <li><Link onClick={handleClick} className='action_btn' to="/feedback">Leave Feedback</Link></li> */}
+                    <li>
+                        <a href="mailto:nalou4@gmail.com" target="_blank" className='action_btn'>
+                            Leave Feedback
+                        </a>
+                    </li>
                 </div>
             </header>
         </>

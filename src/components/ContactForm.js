@@ -10,6 +10,19 @@ const ContactForm = () => {
         formState: { errors }
     } = useForm();
 
+    const popup = document.getElementById("popup");
+
+    function closePopup(){
+        popup.classList.remove(".open-popup");
+        console.log(popup);
+    }
+
+    function openPopup(){
+        popup.classList.add(".open-popup")
+        closePopup();
+    }
+
+
     // Function that displays a success toast on bottom right of the page when form submission is successful
     const toastifySuccess = () => {
         toast('Form sent!', {
@@ -93,7 +106,6 @@ const ContactForm = () => {
                                     )}
                                     <label for="email" ><i class="fa-solid fa-envelope"></i> Your email</label>
                                 </div>
-
                                 </div>
 
 
@@ -132,8 +144,11 @@ const ContactForm = () => {
                                     <label for="message" ><i class="fa-solid fa-comment"></i> Message</label>
                                 </div>
 
-                                <button className='contact-btn' type='submit'>
+                                <button onClick={openPopup()} className='contact-btn' type='submit'>
                                     SUBMIT <i class="fa-solid fa-paper-plane"></i>
+                                    <div className='popup' id='popup'>
+                                        <label>Thank you for your feedback.</label>
+                                    </div>
                                 </button>
 
                             </form>

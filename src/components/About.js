@@ -7,7 +7,7 @@ const About = () => {
             <section>
                 <div className='about-row'>
 
-                    <div className='col'>
+                    <div className='about-col'>
                         <h1 className='intro'>Hi! I'm Nikki.</h1>
                         <p className='intro'>Software Engineer /<br></br>Web Developer</p>
                     </div>
